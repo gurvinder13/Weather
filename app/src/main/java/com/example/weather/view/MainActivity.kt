@@ -141,7 +141,6 @@ class MainActivity : AppCompatActivity(), SearchCityAdapter.SearchNameHistoryCli
             context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         inputManager.hideSoftInputFromWindow(windowToken, 0)
     }
-
     override fun onNameSelected(name: String, selectedPosition: Int) {
         if (name != "") {
             binding.edtSearch.setText(name, true)

@@ -52,21 +52,6 @@
             app:layout_constraintEnd_toEndOf="@id/til_search"
             app:layout_constraintTop_toTopOf="@id/til_search" />
 
-
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:id="@+id/search_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/grey"
-            android:hint="Enter city name"
-            android:imeOptions="actionDone"
-            android:inputType="textCapSentences"
-            android:padding="10dp"
-            android:visibility="gone"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_recent_search"
             android:layout_width="match_parent"

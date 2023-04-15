@@ -53,21 +53,6 @@ class MainActivity : AppCompatActivity(), SearchCityAdapter.SearchNameHistoryCli
             binding.rvRecentSearch.visibility = View.GONE
         }
 
-/*
-        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextChange(query: String): Boolean {
-
-                return true
-            }
-
-            override fun onQueryTextSubmit(query: String): Boolean {
-                searchCity = query
-                viewModel.getWeather(query, model) // fetch weather info
-                binding.searchView.hideKeyboard()
-                return true
-            }
-        })
-*/
         binding.edtSearch.setOnEditorActionListener { _, actionId, event ->
             if (event != null && event.keyCode == KeyEvent.KEYCODE_ENTER ||
                 actionId == EditorInfo.IME_ACTION_NEXT

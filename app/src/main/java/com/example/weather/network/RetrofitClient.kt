@@ -25,16 +25,6 @@ object RetrofitClient {
                         val httpClient = OkHttpClient.Builder()
                                 .addInterceptor(QueryParameterAddInterceptor())
 
-                        /*// for pretty log of HTTP request-response
-                        httpClient.addInterceptor(
-                                LoggingInterceptor.Builder()
-                                        .loggable(BuildConfig.DEBUG)
-                                        .setLevel(HttpLoggingInterceptor.Level.BASIC)
-                                        .log(Platform.INFO)
-                                        .request("LOG")
-                                        .response("LOG")
-                                        .executor(Executors.newSingleThreadExecutor())
-                                        .build())*/
 
                         val client = httpClient.build()
 

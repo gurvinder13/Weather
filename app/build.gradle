@@ -54,9 +54,7 @@ dependencies {
     // network call related libraries
     implementation 'com.squareup.retrofit2:retrofit:2.6.2' // REST API calling library
     implementation 'com.squareup.retrofit2:converter-gson:2.6.2' // JSON parsing library
-   /* implementation('com.github.ihsanbal:LoggingInterceptor:3.0.0') { // HTTP pretty log printing library
-        exclude group: 'org.json', module: 'json'
-    }*/
+
     implementation("com.squareup.okhttp3:logging-interceptor:4.7.2")
 
 
